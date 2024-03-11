@@ -1,7 +1,7 @@
 import { headers } from "next/headers";
 import Script from "next/script";
 
-export dynamic = "force-dynamic";
+export const dynamic = "force-dynamic";
 
 export default function Page() {
   const nonce = headers().get("x-nonce");
