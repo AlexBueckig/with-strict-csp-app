@@ -9,6 +9,7 @@ export default function Page() {
   return (
     <main>
       <h1>CSP Test </h1>
+      <p>Nonce: {nonce}</p>
       <Script nonce={nonce}>{`console.log("CSP");`}</Script>
     </main>
   );
