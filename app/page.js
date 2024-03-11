@@ -5,6 +5,6 @@ export default function Page() {
   const nonce = headers().get("x-nonce");
 
   return <Script nonce={nonce}>
-    `console.log("CSP");`
+    {`console.log("CSP");`}
     </Script>;
 }
